@@ -13,6 +13,8 @@ import (
 
 func main() {
 	enviroment.VerifyEnvVariable("port")
+	enviroment.VerifyEnvVariable("mongo_uri")
+	enviroment.VerifyEnvVariable("mongo_db")
 
 	port := enviroment.GetEnvVariable("port")
 
