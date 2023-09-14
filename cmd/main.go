@@ -5,18 +5,18 @@ import (
 	"github.com/cbotte21/archive-go/pb"
 	"github.com/cbotte21/archive-go/schema"
 	"github.com/cbotte21/microservice-common/pkg/datastore"
-	"github.com/cbotte21/microservice-common/pkg/enviroment"
+	"github.com/cbotte21/microservice-common/pkg/environment"
 	"google.golang.org/grpc"
 	"log"
 	"net"
 )
 
 func main() {
-	enviroment.VerifyEnvVariable("port")
-	enviroment.VerifyEnvVariable("mongo_uri")
-	enviroment.VerifyEnvVariable("mongo_db")
+	environment.VerifyEnvVariable("port")
+	environment.VerifyEnvVariable("mongo_uri")
+	environment.VerifyEnvVariable("mongo_db")
 
-	port := enviroment.GetEnvVariable("port")
+	port := environment.GetEnvVariable("port")
 
 	lis, err := net.Listen("tcp", ":"+port)
 	if err != nil {
