@@ -1,6 +1,6 @@
 module github.com/cbotte21/archive-go
 
-go 1.19
+go 1.21.1
 
 require (
 	github.com/cbotte21/microservice-common v0.0.0-20230615154906-ecba8d3ac07b
