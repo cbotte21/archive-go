@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/cbotte21/hive-go/internal"
-	"github.com/cbotte21/hive-go/pb"
-	"github.com/cbotte21/hive-go/schema"
+	"github.com/cbotte21/archive-go/internal"
+	"github.com/cbotte21/archive-go/pb"
+	"github.com/cbotte21/archive-go/schema"
 	"github.com/cbotte21/microservice-common/pkg/datastore"
 	"github.com/cbotte21/microservice-common/pkg/enviroment"
 	"google.golang.org/grpc"

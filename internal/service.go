@@ -2,8 +2,8 @@ package internal
 
 import (
 	"context"
-	"github.com/cbotte21/hive-go/pb"
-	"github.com/cbotte21/hive-go/schema"
+	"github.com/cbotte21/archive-go/pb"
+	"github.com/cbotte21/archive-go/schema"
 	"github.com/cbotte21/microservice-common/pkg/datastore"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
@@ -12,6 +12,11 @@ type Archive struct {
 	Games          *datastore.MongoClient[schema.Game]
 	ServiceRecords *datastore.MongoClient[schema.SVCRecord]
 	pb.UnimplementedArchiveServiceServer
+}
+
+func (archive *Archive) mustEmbedUnimplementedArchiveServiceServer() {
+	//TODO implement me
+	panic("implement me")
 }
 
 func NewArchive(games *datastore.MongoClient[schema.Game], svcRecords *datastore.MongoClient[schema.SVCRecord]) Archive {

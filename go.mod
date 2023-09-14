@@ -1,4 +1,4 @@
-module github.com/cbotte21/hive-go
+module github.com/cbotte21/archive-go
 
 go 1.19
 
